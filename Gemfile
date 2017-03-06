@@ -19,4 +19,6 @@ group :development do
   platforms :jruby do
     gem 'ruby-debug'
   end
+
+  gem 'composite_primary_keys'
 end

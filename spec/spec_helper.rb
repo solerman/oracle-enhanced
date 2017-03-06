@@ -22,7 +22,7 @@ elsif RUBY_ENGINE == 'jruby'
   puts "==> Running specs with JRuby version #{JRUBY_VERSION}"
 end
 
-NO_COMPOSITE_PRIMARY_KEYS = true
+#NO_COMPOSITE_PRIMARY_KEYS = true
 
 require 'active_record'
 
