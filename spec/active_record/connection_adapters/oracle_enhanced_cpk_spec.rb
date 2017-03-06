@@ -39,7 +39,7 @@ describe "OracleEnhancedAdapter composite_primary_keys support" do
         end
       end
       class ::JobHistory < ActiveRecord::Base
-        set_table_name "job_history"
+        self.table_name = "job_history"
         set_primary_keys :employee_id, :start_date
       end
     end
@@ -76,11 +76,11 @@ describe "OracleEnhancedAdapter composite_primary_keys support" do
         end
       end
       class ::CpkWriteLobsTest < ActiveRecord::Base
-        set_table_name 'cpk_write_lobs_test'
+        self.table_name = 'cpk_write_lobs_test'
         set_primary_keys :type_category, :date_value
       end
       class ::NonCpkWriteLobsTest < ActiveRecord::Base
-        set_table_name 'non_cpk_write_lobs_test'
+        self.table_name = 'non_cpk_write_lobs_test'
       end
     end
 
